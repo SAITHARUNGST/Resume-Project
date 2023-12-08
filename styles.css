@@ -6,6 +6,11 @@ body {
     color: #333;
 }
 
+body{
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+  }
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -147,4 +152,3 @@ body{
       display: none;
     }
   }
-
