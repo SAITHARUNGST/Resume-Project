@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Resumes</title>
+    <style>
+        .slideshow-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            position: relative;
+            align-items: center;
+            margin: auto;
+        }
+        img{
+            width: 400px;
+            height: 600px;
+        }
+
+        .mySlides {
+            display: none;
+        }
+        body{
+            background-color: #061621;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: crimson;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        H2{
+            color: white;
+            text-align: center;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        .logo a{
+            color:white; 
+            text-decoration: none;
+        }
+
+        .logo a:hover{
+            color:#f40f03; 
+            text-decoration: none;
+        }
+
+        .toggle a{
+            color:white; 
+            text-decoration: none;
+        }
+
+        .toggle a:hover{
+             color:#f40f03; 
+             text-decoration: none;
+        }
+
+        .showcase.active
+        {
+             right: 300px;
+        }
+
+        body h2:hover{
+            color: #f40f03;
+        }
+    </style>
+</head>
+<body> 
+
+    <h2>SAMPLES</h2>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="/images/Resume Project 1_page-0001.jpg" alt="Slide 1">
+        </div>
+
+        <div class="mySlides">
+            <img src="/images/Resume Project 2_page-0001.jpg" alt="Slide 2">
+        </div>
+
+        <div class="mySlides">
+            <img src="/images/Resume Project_page-0001.jpg" alt="Slide 3">
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    <h2 class="logo"><a href="resume.html" >BUILD YOUR RESUME</a></h2>
+        <div class="toggle">
+        <h2 ><a href="index.html" >HOME</a></h2>
+    </div>
+        
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+</body>
+</html>

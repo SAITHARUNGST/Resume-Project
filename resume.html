@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Resume Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&family=Roboto:ital,wght@1,100&family=Skranji:wght@700&family=Vina+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div id="resumeContainer" style="display: none;">
+
+  <header>
+    <div class="container">
+      <h1 id="userName">Your Name</h1>
+      <p id="userJobTitle">Your job title</p>
+    </div>
+  </header>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <span id="userEmail">your.email@example.com</span></p>
+      <p>Phone: <span id="userPhone">(123) 456-7890</span></p>
+      <p>LinkedIn: <span id="userLinkedIn">linkedin.com/in/yourname</span></p>
+      <p>GitHub: <span id="userGitHub">github.com/yourusername</span></p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-item" id="userEducation">
+      </div>
+    </div>
+  </section>
+
+  <section id="work-experience">
+    <div class="container">
+      <h2>Work Experience</h2>
+      <div class="experience-item" id="userWorkExperience">
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list" id="userSkills">
+      </ul>
+    </div>
+  </section>
+  <div class="but">
+  <button type="button" id="printResume">Print Resume</button>
+  <button type="button" id="editButton">Edit</button>
+</div>
+</div>
+<div class="form">
+  <h2>PLEASE FILL YOUR DETAILS TO GENERATE YOUR RESUME</h2>
+  <form id="resumeForm">
+
+    <label for="userNameInput">Name:</label>
+    <input type="text" id="userNameInput" required>
+
+    <label for="userJobTitleInput">Job Title:</label>
+    <input type="text" id="userJobTitleInput" required>
+
+    <label for="userEmailInput">Email:</label>
+    <input type="email" id="userEmailInput" required>
+
+    <label for="userPhoneInput">Phone:</label>
+    <input type="tel" id="userPhoneInput" required>
+
+    <label for="userLinkedInInput">LinkedIn:</label>
+    <input type="text" id="userLinkedInInput" required>
+
+    <label for="userGitHubInput">GitHub:</label>
+    <input type="text" id="userGitHubInput" required>
+
+    <label for="userEducationInput">Education:</label>
+    <input type="text" id="userEducationInput" required>
+
+    <label for="numWorkExperiences">Number of Work Experiences:</label>
+    <input type="number" id="numWorkExperiences" min="0" required>
+    <div id="workExperienceContainer"></div>
+
+
+    <label for="userSkillsInput">Skills (comma-separated):</label>
+    <input type="text" id="userSkillsInput" required>
+
+    <label for="colorPicker">Choose Resume Color:</label>
+    <input type="color" id="colorPicker" value="#4285f4">
+
+    <button type="submit">Generate Resume</button>
+  </form>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

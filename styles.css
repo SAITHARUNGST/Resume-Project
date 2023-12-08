@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4;
+    padding-bottom: 10px;
+}
+
+section p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #4285f4;
+    color: #fff;
+    border-radius: 5px;
+}
+
+form {
+    width: calc(100% - 500px);
+    margin: 20px auto;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
+}
+
+form label,
+form input {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #357ae8;
+}
+
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+}
+body{
+    background-color: #061621;
+}
+
+.form h2{
+    color: #fff;
+    text-align: center;
+}
+
+.but{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#printResume,
+#editButton {
+  background-color: #4285f4;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#printResume:hover,
+#editButton:hover {
+  background-color: #3c75cc;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: calc(100% - 100px);
+  }
+}
