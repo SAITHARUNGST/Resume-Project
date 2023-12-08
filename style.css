@@ -13,7 +13,7 @@ header
   left: 0;
   width: 100%;
   padding: 40px 100px;
-  z-index: 1000;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,7 +84,6 @@ header .logo
 }
 .text
 {
-  padding-top: 60px;
   position: relative;
   z-index: 10;
 }
@@ -153,6 +152,15 @@ header .logo
   {
     font-size: 2em;
   }
+}
+@media (max-width: 600px)
+{
+.text
+{
+  margin-top: 120px;
+  position: relative;
+  z-index: 10;
+}
 }
 
 @keyframes gradient {
