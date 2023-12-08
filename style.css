@@ -222,3 +222,8 @@ header .logo
         transform: translateX(1);
     }
 }
+
+* {
+  -webkit-print-color-adjust: exact !important;                  
+  print-color-adjust: exact !important;           
+}
