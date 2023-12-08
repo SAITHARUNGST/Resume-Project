@@ -11,18 +11,18 @@ body {
     margin: 0 auto;
 }
 
-.head {
+header {
     background-color: #4285f4;
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
-.head h1 {
+header {
     margin: 0;
 }
 
-.head p {
+header {
     margin: 5px 0 0;
 }
 
