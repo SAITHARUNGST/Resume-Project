@@ -139,6 +139,9 @@ body{
 }
 
 @media print {
+    #but{
+        display: none;
+    }
     #printResume,
     #editButton {
       display: none;
